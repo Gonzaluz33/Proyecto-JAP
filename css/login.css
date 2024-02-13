@@ -1,0 +1,92 @@
+body{
+    background-color:rgba(248,249,250,255);
+    font-family: 'raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/fondo-login.PNG);
+}
+
+.container-login{
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.container-login h1{
+    font-weight: bold;
+}
+
+form{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+form input{
+    margin-bottom: 10px;
+    width: 290px;
+    height: 40px;
+    background-color: rgba(250,250,250,255);
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+#login-button{
+    background-color: rgba(240,145,0,255);
+    position: relative;
+    text-align: center;
+    color: rgb(218, 211, 211);
+    border-radius: 10px;
+    border: 1px solid;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    height: 35px;
+    width: 290px;
+    margin: auto;
+}
+
+#login-button a {
+    /* Estilos para el enlace dentro del botón */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+#login-button:hover, #button-login:hover{
+    color: rgb(218, 211, 211);
+}
+
+#login-button.hovered{
+    color: rgb(227, 236, 240);
+}
+
+#login-button.hovered:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+
+.links a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: blue;
+    font-size: 0.8em;
+}

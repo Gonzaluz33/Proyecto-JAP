@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark" aria-label="Eleventh navbar example">
+    <div class="container">
+      <a class="navbar-brand text-light" href="index.html"><span class="text-warning">E</span>-Mercado</a>
+      <button class="navbar-toggler link-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="material-symbols-outlined">
+          menu
+        </span> </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample09">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-light" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="categories.html">Categorias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="sell.html">Vender</a>
+          </li>
+        </ul>
+        <li class="nav-item dropdown d-flex">
+          <a class="nav-link dropdown-toggle text-light mx-md-4" href="#" data-bs-toggle="dropdown"
+            aria-expanded="false" id="userNameContainer"></a>
+            <ul class="dropdown-menu bg-dark">
+              <li class="d-flex justify-content-center">
+                <button id="dl-icon-dark" type="button" class="btn btn-dark w-100" onclick="cambiarTema()">
+                  <i class="bi bi-moon-stars-fill w-100 text-warning"></i>
+                </button>
+                <button id="dl-icon-sun" type="button" class="btn btn-dark w-100 d-none" onclick="cambiarTema()">
+                  <i class="bi bi-sun-fill w-100 text-warning"></i>
+                </button>
+              </li>
+              <li><a class="dropdown-item text-light" href="cart.html">Mi carrito</a></li>
+              <li><a class="dropdown-item text-light" href="my-profile.html">Mi perfil</a></li>
+              <li><a class="dropdown-item text-light" onclick="cerrarSesion()">Cerrar sesión</a></li>
+            </ul>
+        </li>
+      </div>
+    </div>
+  </nav>  
+  <main>
+    <div class="container p-5">
+      <h1>Perfil</h1>
+    
+      <div class="row mb-4">
+        <div class="row d-flex justify-content-center">
+          <div class="col-6 col-md-2 d-flex justify-content-center">
+            <div class="col-6 col-md-12">
+              <img src="/img/img_perfil.png" alt="" class="w-100" id="fotoPerfil">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <form action="" id="formPerfil" class="needs-validation" novalidate> <!-- FORMULARIO-->
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="input-group mb-3">
+                <span class="input-group-text">Primer nombre</span>
+                <input id="inputNombre" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+                <div class="valid-feedback">
+                  Correcto
+                </div>
+                <div class="invalid-feedback">
+                  Completa el campo
+                </div>
+            </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Segundo nombre</span>
+                <input id="inputNombre2" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Primer apellido</span>
+                <input id="inputApellido" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+                <div class="valid-feedback">
+                  Correcto
+                </div>
+                <div class="invalid-feedback">
+                  Completa el campo
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Segundo apellido</span>
+                <input id="inputApellido2" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">E-mail</span>
+              <input id="inputEmail" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="inputEmail" required>
+              <div class="valid-feedback">
+                Correcto
+              </div>
+              <div class="invalid-feedback">
+                Completa el campo
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Teléfono de contacto</span>
+              <input id="inputTelefono" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Foto de perfil</span>
+              <input id="inputFoto" type="file" class="form-control" id="inputGroupFile02" required>
+            </div>
+          </div>
+          <hr>
+          <div class="col-12 d-flex justify-content-center">
+            <button type="submit" class="btn btn-warning">Guardar cambios</button>
+          </div>
+        </form>     
+      </div>
+    </div>
+  </main>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-end">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="js/init.js"></script>
+  <script src="js/my-profile.js"></script>
+</body>
+
+</html>
